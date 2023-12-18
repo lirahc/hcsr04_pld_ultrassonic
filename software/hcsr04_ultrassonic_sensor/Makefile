@@ -14,27 +14,20 @@ LDFLAGS = -Wl
 LDLIBS =
 MAIN = main_HCSR04
 
-#test: testbench.vvp $(MAIN)32.hex
-#	# vvp -l testbench.log -N testbench.vvp
-
-#testbench.vvp: testbench.v ../../picorv32.v $(MAIN)_dbg.v
-#	#iverilog -o testbench.vvp testbench.v ../../picorv32.v
-#	#chmod -x testbench.vvp
-
 quartus_$(MAIN).hex: $(MAIN)32.hex
-	python3 hex8tointel.py $(MAIN).tmp > quartus_$(MAIN).hex
+	python3 ../hex8tointel.py $(MAIN).tmp > quartus_$(MAIN).hex
 	rm $(MAIN)32.hex
 
-$(MAIN)32.hex: $(MAIN).elf hex8tohex32.py
+$(MAIN)32.hex: $(MAIN).elf ../hex8tohex32.py
 	$(RISCV_TOOLS_PREFIX)objcopy -O verilog $(MAIN).elf $(MAIN).tmp
 	$(RISCV_TOOLS_PREFIX)objdump -h -S $(MAIN).elf > "$(MAIN).lss"
-	python3 hex8tohex32.py $(MAIN).tmp > $(MAIN)32.hex
+	python3 ../hex8tohex32.py $(MAIN).tmp > $(MAIN)32.hex
 
-start.o: start.S
-	$(CC) -c -nostdlib start.S $(LDLIBS)
+start.o: ../_core/start.S
+	$(CC) -c -nostdlib ../_core/start.S $(LDLIBS)
 
-$(MAIN).elf: $(MAIN).o syscalls.o start.o utils.o
-	$(CC) $(LDFLAGS),-Map=$(MAIN).map -o $@ $^ -T sections.ld $(LDLIBS)
+$(MAIN).elf: $(MAIN).o start.o ../_core/syscalls.o ../_core/utils.o
+	$(CC) $(LDFLAGS),-Map=$(MAIN).map -o $@ $^ -T ../_core/sections.ld $(LDLIBS)
 	chmod -x $(MAIN).elf
 
 sint:
@@ -47,7 +40,7 @@ flash:
 	$(QUARTUS_DIR)quartus_stp_tcl -t "flash.tcl"
 
 clean:
-	rm -f *.o *.d *.tmp start.elf *.lss *.map
+	rm -f ../*/*.o *.o *.d *.tmp start.elf *.lss *.map
 	rm -f $(MAIN).elf $(MAIN).hex $(MAIN)32.hex quartus_$(MAIN).hex
 
 -include *.d

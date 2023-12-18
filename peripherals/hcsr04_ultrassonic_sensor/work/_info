@@ -1,0 +1,184 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/var/data/aluno/lira/riscv-multicycle-master/peripherals/hcsr04_ultrassonic_sensor
+T_opt
+!s110 1701799884
+VhR7eJ7JO^PKRF@Oi1B0`i0
+04 9 3 work testbench rtl 1
+=1-a45d362a0731-656f67ca-58df9-34
+Z2 !s124 OEM10U2 
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1702054635
+VPM]XQg8o=MTif>U7N<hVL0
+Z6 04 13 3 work testbenchlira rtl 1
+=1-a45d362a0731-65734ae8-c7bf2-28
+R2
+R3
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1702060012
+ViG?_NWNk7m>:h2aEn6m?o1
+R6
+=1-a45d362a0731-65735fec-13307-1d2
+R2
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt2
+R5
+Ehcsr04
+Z7 w1702059977
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 27
+R1
+Z11 8HCSR04.vhd
+Z12 FHCSR04.vhd
+l0
+L10 1
+V0QeH2MLSOf6XcoL1ZBo6Q1
+!s100 mB:aU9Cf7<oLRGEXNK^PX3
+Z13 OL;C;2021.2;73
+32
+Z14 !s110 1702060011
+!i10b 1
+Z15 !s108 1702060011.000000
+Z16 !s90 -reportprogress|300|HCSR04.vhd|testbench2.vhd|
+Z17 !s107 testbench2.vhd|HCSR04.vhd|
+!i113 0
+Z18 tExplicit 1 CvgOpt 0
+Artl
+R8
+R9
+R10
+Z19 DEx4 work 6 hcsr04 0 22 0QeH2MLSOf6XcoL1ZBo6Q1
+!i122 27
+l53
+L39 95
+V8Bn6;P_QBIz`VJh7Ml_Dj3
+!s100 DB32kAV1JfAmJD7:BXkZV2
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+Etestbench
+Z20 w1701800034
+R8
+R9
+R10
+!i122 7
+R1
+Z21 8testbench2.vhd
+Z22 Ftestbench2.vhd
+l0
+Z23 L14 1
+VRUgbd@0R90^Ui0Oa?Z5^<1
+!s100 `lJ[eQCS4akLO9W<a9Ae@0
+R13
+32
+Z24 !s110 1701800091
+!i10b 1
+Z25 !s108 1701800091.000000
+R16
+R17
+!i113 0
+R18
+Artl
+DEx4 work 6 hcsr04 0 22 nKz5EeYm_ii[h`kBXS;m:0
+R8
+R9
+R10
+DEx4 work 9 testbench 0 22 RUgbd@0R90^Ui0Oa?Z5^<1
+!i122 7
+l31
+L17 54
+V>TFBe47ALWj1bS4D=zToC1
+!s100 _^L7bHF:BT86K2D=PSXW=2
+R13
+32
+R24
+!i10b 1
+R25
+R16
+R17
+!i113 0
+R18
+Etestbenchlira
+Z26 w1702060007
+R8
+R9
+R10
+!i122 27
+R1
+R21
+R22
+l0
+R23
+V4AjCH6[[9?T?Qg06[jaz>3
+!s100 ^<6zaN>BD;L^Gm70zYi5G1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+Artl
+R19
+R8
+R9
+R10
+DEx4 work 13 testbenchlira 0 22 4AjCH6[[9?T?Qg06[jaz>3
+!i122 27
+l33
+L17 61
+VDEazzT`NC:27iU_oU5[VT3
+!s100 6j6gEP]d_4miYk?P1z4OF0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18

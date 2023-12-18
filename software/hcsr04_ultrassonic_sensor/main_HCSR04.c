@@ -11,13 +11,9 @@
  * -----------------------------------------
  */
 
-#include "utils.h"
-#include "hardware.h"
-
-INBUS = 0; // teste lira
-SEGMENTS = 0; // teste lira
-
-
+#include "../_core/utils.h"
+#include "../_core/hardware.h"
+#include "../gpio/gpio.h"
 int Read_HCSR04(){
 	return INBUS;
 }
@@ -27,8 +23,8 @@ int main(){
 
 	while (1){
 
-		SEGMENTS = Read_HCSR04();
-		delay_(5000);
+		SEGMENTS = 0x12;
+		delay_(500000);
 
 	}
 
