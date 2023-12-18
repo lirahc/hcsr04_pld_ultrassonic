@@ -20,9 +20,17 @@
 <kbd>SIMULAÇÃO![SIMULAÇÃO](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/53c80034-e160-429f-b757-f160ba7e3769)<kbd>
 
 ## Teste Prático
-- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_small_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/1ae7c6e8-e484-4fdb-81b3-f5fc703d5f0d)<kbd>
-- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_big_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/bfcf183d-06a4-4807-a2d7-b30557ede34b)<kbd>
-- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_2_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/91d3e51a-c8cf-45a9-a008-ebd8bd8690b5)<kbd>
+### Distância de 05 cm.
+<kbd>![osc_small_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/1ae7c6e8-e484-4fdb-81b3-f5fc703d5f0d)<kbd>
+
+### Distância de 15 cm.
+<kbd>![osc_big_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/bfcf183d-06a4-4807-a2d7-b30557ede34b)<kbd>
+
+### Disposição Trig & Echo
+<kbd>![osc_2_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/91d3e51a-c8cf-45a9-a008-ebd8bd8690b5)<kbd>
 
 ## ToDo
-- Na síntese, observou-se que após um determinado tempo, ele parava de realizar a contagem e necessitava de reset. Por isso, posteriormente é necessário analisar o sinal de echo no osciloscópio para verificar uma possível perda de descida deste sinal.
+- Na síntese, observou-se que após um determinado tempo, ele parava de realizar a contagem e necessitava de reset. Por isso, posteriormente é necessário analisar o sinal de echo no osciloscópio para verificar uma possível perda de descida deste sinal. Sendo assim, o *Trigger* funciona num período de 10us sendo o período de 60ms do sistema, antes disso o sistema está em *Idle*, após o período de Trigger o sistema está enable e o sinal *Echo* está disponível para captação do sinal para validação do sensor, como pode ser visto na figura a seguir o sistema.
+
+
+
