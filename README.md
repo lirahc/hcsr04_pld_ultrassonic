@@ -20,10 +20,9 @@
 <kbd>SIMULAÇÃO![SIMULAÇÃO](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/53c80034-e160-429f-b757-f160ba7e3769)<kbd>
 
 ## Teste Prático
-- <kbd>TESTE EM OSCILOSCÓPIO![osc_small_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/1ae7c6e8-e484-4fdb-81b3-f5fc703d5f0d)<kbd>
-- <kbd>TESTE EM OSCILOSCÓPIO![osc_big_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/bfcf183d-06a4-4807-a2d7-b30557ede34b)<kbd>
-- <kbd>TESTE EM OSCILOSCÓPIO![osc_2_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/91d3e51a-c8cf-45a9-a008-ebd8bd8690b5)<kbd>
-<kbd>
+- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_small_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/1ae7c6e8-e484-4fdb-81b3-f5fc703d5f0d)<kbd>
+- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_big_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/bfcf183d-06a4-4807-a2d7-b30557ede34b)<kbd>
+- <kbd>TESTE EM OSCILOSCÓPIO   ![osc_2_onda](https://github.com/lirahc/hcsr04_pld_ultrassonic/assets/49963038/91d3e51a-c8cf-45a9-a008-ebd8bd8690b5)<kbd>
 
 ## ToDo
 - Na síntese, observou-se que após um determinado tempo, ele parava de realizar a contagem e necessitava de reset. Por isso, posteriormente é necessário analisar o sinal de echo no osciloscópio para verificar uma possível perda de descida deste sinal.
